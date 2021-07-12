@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<header>
+    <img class="mandala" src="pink-mandala.jpg" alt="">
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Accesorios</a></li>
+            <li><a href="">Descuentos</a></li>
+            <li><a href="">Mi cuenta</a></li>
+
+        </ul>
+    </nav>
+    <div class="centro">
+
+    </div>
+</header>
+
+<head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mada&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
     <main></main>
-    <H1>MANDALA NAILS</H1>
-    <H2>MÉTODO DE PAGO </H2>
-    <H3>TARJETA DE CRÉDITO</H3>
-    <div class="data">
-      <p id="enterdata">Ingrese su numero de tarjeta</p>
-    
-    <form>
-      <input type="text" id="numeroTarjeta" placeholder="Numero de tarjeta" name="ingrese numero de tarjeta" maxlength="16" required/>
-    </form>
-   </div>
-    <br>
-    <button class="boton" id="botonValidar">Validar Tarjeta</button>
-    <h3>Tu tarjeta es <span id="validacion"></span></h3>
+
+
+    <div class="parteValidacion" id="parteValidacion1">
+        <h1 class="validacion" id="validCard">VALIDACIÓN DE TARJETA</h1>
+
+        <div>
+            <h1 class="intro">Introduce tu número de tarjeta para realizar la validación y proceder con tu compra</h1>
+        </div>
+        <form class="validacionTarjeta">
+
+            <input class="numeroIn" type="number" id="cardNumber" placeholder="Numero de tarjeta" required />
+
+            <button class="boton" id="btnValidar">Validar</button>
+
+        </form>
+
+
+
+
+
+
+    </div>
+
+    <div class="resultPart" id="resultCard">
+
+        <h1 class="resultPh" id="showCardResult">Su tarjeta con terminación:</h1>
+        <h1 id="resultNum"></h1>
+        <h1 class="correct" id="correct2">ES VÁLIDA</h1>
+        <h1 class="incorrect" id="hideIncorrect">No es válida, por favor vuelva a intentarlo</h1>
+        <button class="btnOther" id="returnValidate">Validar otra tarjeta</button>
+
+    </div>
+
+
     <footer></footer>
     <script src="index.js" type="module"></script>
-  </body>
+
+
+
+</body>
+
 </html>
