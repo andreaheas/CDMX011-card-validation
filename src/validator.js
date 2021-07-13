@@ -20,17 +20,13 @@ const validator = {
         console.log(num)
 
         /* con la constante reducer buscamos que se sumen todos los valores del array*/
-        const reducer = (acumulator, currentValue) => acumulator + currentValue;
-        let total = (num.reduce(reducer));
-        console.log(total);
 
-        /*         if (total % 2 == 0) {
-                    return true
-                } else {
-                    return false
-                } */
+        const reducer = num.reduce((acc, el) => acc + el, 0)
+        console.log(reducer);
+
+
         /* Con la variable validateNumber que si el total termina en 0 es una tarjeta valida, y si no es invalida*/
-        let validateNumber = total % 10 == 0 ? true : false;
+        let validateNumber = reducer % 10 == 0 ? true : false;
         console.log(validateNumber);
 
         return validateNumber
@@ -39,13 +35,20 @@ const validator = {
 
     /* con maskify logramos hacer que se oculten los numero de la tarjeta, excepto los últimos 4 dígitos*/
     "maskify": function(cardNumber) {
-        return cardNumber.split('').map((letter, i) =>
-            i < cardNumber.length - 4 ? '#' : letter).join('');
+        return cardNumber.split('').map((Number, i) =>
+            i < cardNumber.length - 4 ? '#' : Number).join('');
 
 
 
     }
 
+
+
+
+
 }
+
+
+
 
 export default validator
