@@ -19,6 +19,9 @@ i. El mercado objetivo en el que se penso fue mujeres que son laboralmente activ
 ii. La validación de la tarjeta nos permite proceder con el pago de forma correcta, conocer de forma inmediata si podemos proceder con el cobro de manera inmediata o si hay algun problema con esa tarjeta, solicitarle al usuario que ingrese otra o que seleccione otra forma de pago. 
 
 iii. PROTOTIPO EN PAPAPEL IMAGEN 
+![Imagen de iOS (1)](https://user-images.githubusercontent.com/86362925/125379374-05448000-e356-11eb-9eba-2416e562946a.jpg)
+![Imagen de iOS](https://user-images.githubusercontent.com/86362925/125379490-38870f00-e356-11eb-86e1-0ba2a89bc62e.jpg)
+
 
 IV. FEEDBACK 
 
