@@ -26,7 +26,7 @@ IV. FEEDBACK
 
     * Al presentar el primer avance y en la restrospectiva, me comentaron que iba por buen camino, pero aun no terminaba con la funcionalidad de la página y con el diseño, el cual en ese momento no se veía tan organizado. 
 
-V. IMAGEN DEL PROTOTIPO FINAL 
+V. IMAGEN DEL PROTOTIPO FINAL : https://www.figma.com/file/MzpVAS8gG6tLwlhmZyxeTp/Card-Validation?node-id=0%3A1
 
 ## Tablero en Trello 
 
