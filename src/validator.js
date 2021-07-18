@@ -3,7 +3,7 @@ const validator = {
         /*Dividimos la variable, creamos un nuevo array, lo invertimos, si el residuo del index es 
         divisible entre 2 se empieza la multiplicación desde la segunda posición, si el digito es mayor
         a 9 se le resta 9*/
-        let num = cardNumber.split('').map(Number).reverse().map((digit, i) => {
+        const num = cardNumber.split('').map(Number).reverse().map((digit, i) => {
             if (i % 2 !== 0) {
                 let mult = digit * 2;
                 if (mult > 9) {

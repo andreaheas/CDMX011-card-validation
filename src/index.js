@@ -11,17 +11,10 @@ resultNum2.style.display = "none;"
 
 
 
-let hidePartValidation = document.getElementById("parteValidacion1")
-let hideIncorrect = document.getElementById("hideIncorrect")
-let hideCorrect = document.getElementById("correct2")
-let brandNumH = document.getElementById("brandNum")
-
-
-
-
-
-
-
+let hidePartValidation = document.getElementById("parteValidacion1");
+let hideIncorrect = document.getElementById("hideIncorrect");
+let hideCorrect = document.getElementById("correct2");
+let brandNumH = document.getElementById("brandNum");
 
 
 /*recuperamos el botón como objeto*/
@@ -41,26 +34,12 @@ document.getElementById('btnValidar').addEventListener("click", (event) => {
     resultNum2.innerHTML = validator.maskify(cardNumber);
 
 
-
-
-
-
-
     if (validateNumber == true) {
         hidePartValidation.style.display = "none";
         hideIncorrect.style.display = "none";
         resultCard2.style.display = "block";
+        brandNumH.style.display = "block";
 
-
-
-
-        /*let h1 = document.createElement("h1");
-        let t = document.createTextNode(validator.maskify(cardNumber));
-
-        h1.appendChild(t);
-        document.body.appendChild(h1);*/
-
-        //document.getElementById("resultNum").innerHTML = cat
 
 
     } else {
@@ -68,6 +47,7 @@ document.getElementById('btnValidar').addEventListener("click", (event) => {
         hideIncorrect.style.display = "block";
         resultCard2.style.display = "block";
         hideCorrect.style.display = "none";
+        brandNumH.style.display = "none";
 
 
     }
@@ -91,11 +71,6 @@ document.getElementById('btnValidar').addEventListener("click", (event) => {
     let cat = validator.maskify(cardNumber)
     console.log(cat)
 
-
-
-
-
-
 });
 
 //Agregando evento a mi boton de "Validar otra Tarjeta"
@@ -111,9 +86,5 @@ document.getElementById("returnValidate").addEventListener("click", (event) => {
     hideIncorrect.style.display = "none";
     resultCard2.style.display = "none";
     hideCorrect.style.display = "block";
-
-
-
-
 
 })
